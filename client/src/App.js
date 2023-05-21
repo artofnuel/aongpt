@@ -98,7 +98,7 @@ function App() {
           ))}
         </div>
 
-        <div>
+        <div className="chat-input-position">
           <div className="chat-input-holder">
             <form onSubmit={handleSubmit}>
               <input
