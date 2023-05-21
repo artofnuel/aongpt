@@ -34,7 +34,7 @@ function App() {
 
     const messages = newChatLog.map((data) => data.message).join("\n");
 
-    const response = await fetch("/", {
+    const response = await fetch("https://aongpt-server.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function App() {
   };
 
   const getEngines = async () => {
-    const response = await fetch("/models");
+    const response = await fetch("https://aongpt-server.vercel.app/models");
 
     const data = await response.json();
     setModels(data.models);
