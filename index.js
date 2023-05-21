@@ -1,5 +1,3 @@
-// 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
-
 const { Configuration, OpenAIApi } = require("openai");
 const express = require("express");
 
