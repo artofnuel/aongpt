@@ -8,7 +8,7 @@ function App() {
   // add state for input and chat log
 
   const [models, setModels] = useState([]);
-  const [currentModels, setCurrentModels] = useState("ada");
+  const [currentModels, setCurrentModels] = useState("text-davinci-003");
 
   const [input, setInput] = useState("");
   const [chatLog, setChatLog] = useState([
