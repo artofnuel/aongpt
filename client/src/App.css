@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  inset: 0;
+}
+
+.sidemenu {
+  width: 260px;
+  padding: 10px;
+  background-color: #181C31;
+}
+
+.side-menu-button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+  transition: ease 0.4s all;
+}
+
+.side-menu-button:hover {
+  background-color: #31384D;
+  border: 1px solid #31384D;
+}
+
+.side-menu-button .side-menu-plus {
+  margin-right: 10px;
+}
+
+.models {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.models-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #181C31;
+  color: white;
+}
+
+
+
+.chatbox {
+  flex: 1;
+  background-color: #31384D;
+  position: relative;
+  overflow-y: auto;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.chat-input-position {
+  position: relative;
+}
+
+.chat-input-holder {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  left: 0; right: 0;
+}
+
+
+
+.chat-input-textarea {
+  background-color: #525A73;
+  width: 65vw;
+  padding: 12px;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.chat-log {
+   text-align: left;
+}
+
+.chat-message.chataon {
+  background-color: #525A73;
+}
+
+.chat-message-center {
+  /* max-width: 640px; */
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+}
+
+.avatar {
+  background-color: black;
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  padding: 20px;
+}
+.avatar.chataonavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.message {
+    padding: 10px 40px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
