@@ -9,7 +9,6 @@ function App() {
 
   const [models, setModels] = useState([]);
   const [currentModels, setCurrentModels] = useState("ada");
-  console.log(currentModels);
 
   const [input, setInput] = useState("");
   const [chatLog, setChatLog] = useState([
