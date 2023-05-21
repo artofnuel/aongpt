@@ -34,7 +34,7 @@ function App() {
 
     const messages = newChatLog.map((data) => data.message).join("\n");
 
-    const response = await fetch("http://localhost:3080/", {
+    const response = await fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function App() {
   };
 
   const getEngines = async () => {
-    const response = await fetch("http://localhost:3080/models");
+    const response = await fetch("/models");
 
     const data = await response.json();
     setModels(data.models);
